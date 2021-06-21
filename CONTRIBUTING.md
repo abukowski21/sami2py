@@ -25,7 +25,7 @@ Feature requests and feedback
 -----------------------------
 
 The best way to send feedback is to file an issue at
-`GitHub <https://github.com/jklenzing/sami2py/issues>`_.
+[GitHub](https://github.com/jklenzing/sami2py/issues).
 
 If you are proposing a feature:
 
@@ -40,17 +40,14 @@ Development
 To set up `sami2py` for local development:
 
 1. [Fork sami2py on GitHub](https://github.com/jklenzing/sami2py/fork).
-2. Clone your fork locally
+2. Clone your fork locally:
 
-::
+    `git clone git@github.com:your_name_here/sami2py.git`
 
-    git clone git@github.com:your_name_here/sami2py.git
+3. Create a branch for local development:
 
-3. Create a branch for local development
 
-::
-
-    git checkout -b name-of-your-bugfix-or-feature
+    `git checkout -b name-of-your-bugfix-or-feature`
 
    Now you can make your changes locally. Tests for new instruments are
    performed automatically.  Tests for custom functions should be added to the
@@ -62,21 +59,17 @@ To set up `sami2py` for local development:
    is broken on your local system.  You may need to install pytest and
    pytest-flake8 first.
 
-::
-
-    pytest -vs --flake8
+    `pytest -vs --flake8`
 
 
 5. Update/add documentation (in ``docs``), if relevant
 
-6. Commit your changes and push your branch to GitHub
-
-::
-
+6. Commit your changes and push your branch to GitHub:
+```
     git add .
     git commit -m "Brief description of your changes"
     git push origin name-of-your-bugfix-or-feature
-
+```
 7. Submit a pull request through the GitHub website. Pull requests should be
    made to the ``develop`` branch.
 
@@ -91,10 +84,11 @@ For merging, you should:
 1. Include an example for use
 2. Add a note to ``CHANGELOG.md`` about the changes
 3. Ensure that all checks passed (current checks include Travis-CI
-   and Coveralls) [1]_
+   and Coveralls). [1]
 
-.. [1] If you don't have all the necessary Python versions available locally or
-       have trouble building all the testing environments, you can rely on
-       Travis to run the tests for each change you add in the pull request.
-       Because testing here will delay tests by other developers, please ensure
-       that the code passes all tests on your local system first.
+[1]: If you don't have all the necessary Python versions available locally or
+          have trouble building all the testing environments, you can rely on
+          Travis to run the tests for each change you add in the pull request.
+          Because testing here will delay tests by other developers, please ensure
+          that the code passes all tests on your local system first.
+
